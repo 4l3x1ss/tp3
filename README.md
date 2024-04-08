@@ -95,3 +95,36 @@ On branch main
 Your branch is up to date with 'origin/main'.
 
 nothing to commit, working tree clean
+
+
+
+-----------------------
+La mise a jour a bien été transmise
+
+sa230148@di-718-21:~/TP/TP-GIT-equipe16/tp1/courseGIT/tp3$ git pull
+astuce: Tirer sans spécifier comment réconcilier les branches divergentes
+astuce: est découragé. Vous pouvez éliminer ce message en lançant une des
+astuce: commandes suivantes avant votre prochain tirage :
+astuce: 
+astuce:   git config pull.rebase false  # fusion (stratégie par défaut)
+astuce:   git config pull.rebase true   # rebasage
+astuce:   git config pull.ff only       # avance rapide seulement
+astuce: 
+astuce: Vous pouvez remplacer "git config" par "git config --global" pour que
+astuce: ce soit l'option par défaut pour tous les dépôts. Vous pouvez aussi
+astuce: passer --rebase, --no-rebase ou --ff-only sur la ligne de commande pour
+astuce: remplacer à l'invocation la valeur par défaut configurée.
+Warning: Permanently added the ECDSA host key for IP address '140.82.113.4' to the list of known hosts.
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Dépaquetage des objets: 100% (3/3), 1.55 Kio | 23.00 Kio/s, fait.
+Depuis github.com:4l3x1ss/tp3
+   ddde399..a0d0a94  main       -> origin/main
+Mise à jour ddde399..a0d0a94
+Fast-forward
+ README.md | 87 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 87 insertions(+)
+sa230148@di-718-21:~/TP/TP-GIT-equipe16/tp1/courseGIT/tp3$ 
+
