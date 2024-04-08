@@ -16,30 +16,51 @@ public class Portefeuille {
    * du portefeuille actuel doit être supérieur ou égal à celui indiqué.
    * @param destination 
    * @param montantJetons
-   * @return Vrai si la transaction a été effectuée, faux sinon.  
+   * @return Vrai si la transaction a été effectuée, faux sinon.
    */
-  public boolean transfertDevise (Portefeuille destination, double montantJetons){
-      /**
-           FONCTION À IMPLEMENTER
-	  **/
-      return false;
+  public boolean transfertDevise(Portefeuille destination, double montantJetons) {
+      // Vérifier si le montant à transférer est valide
+      if (montantJetons <= 0 || montantJetons > this.montant) {
+          return false; // La transaction ne peut pas être effectuée
+      }
+
+      // Vérifier si les deux portefeuilles utilisent la même devise (Cryptomonnaie)
+      if (!this.monnaie.equals(destination.monnaie)) {
+          return false; // La transaction ne peut pas être effectuée
+      }
+
+      // Effectuer le transfert
+      this.montant -= montantJetons;
+      destination.montant += montantJetons;
+
+      return true; // La transaction a été effectuée avec succès
   }
 
-  /**
+
+    /**
    * Cette fonction vous permet d'acheter des jetons de la 
    * crypto-devise en fonction de leur valeur en euros. 
    * Le résultat est l'augmentation des jetons de la crypto-monnaie.
    * @param montantEuros Valeur d'achat en euros 
    * @return true si le montant en euros est supérieur ou égal à 0 
    */
-  public boolean achatDevise (double montantEuros){
-	/**
-           FONCTION À IMPLEMENTER
-	**/
-    return false;
-  }
+    public boolean achatDevise(double montantEuros) {
+        // Vérifier si le montant en euros est valide
+        if (montantEuros < 0) {
+            return false; // Montant invalide
+        }
 
-  /**
+        // Calculer le nombre de jetons à acheter en fonction de la valeur en euros
+        double montantJetons = montantEuros / this.monnaie.getValeurDeJeton();
+
+        // Augmenter le montant de jetons dans le portefeuille
+        this.montant += montantJetons;
+
+        return true; // L'achat a été effectué avec succès
+    }
+
+
+    /**
    * Valide si le proprietaire passé en parametre est celui
    * qui as le portefeuille
    * @param proprietaire
