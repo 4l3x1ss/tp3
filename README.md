@@ -6,7 +6,7 @@ Nous avons remarqué que pour mettre à jour un fichier que nous avons modifié 
 -git status
 -git add "Le_Fichier_Voulu"
 -git commit -m "Mise à jour du fichier ..."
--git pull
+-git pull *Nous ne sommes pas sur de l'utilité de cette ligne*
 -git push
 
 receveur :
