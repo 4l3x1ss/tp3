@@ -1,4 +1,20 @@
 # tp3
+Zineddine GHALMI
+ALEXIS SOILLE--LECLERC
+
+Nous avons remarqué que pour mettre à jour un fichier que nous avons modifié il faut utiliser les lignes de commandes suivantes :
+-git status
+-git add "Le_Fichier_Voulu"
+-git commit -m "Mise à jour du fichier ..."
+-git pull
+-git push
+
+receveur :
+-git pull
+
+
+
+
 
 git clone git@github.com:4l3x1ss/tp3.git
 Cloning into 'tp3'...
@@ -105,11 +121,11 @@ sa230148@di-718-21:~/TP/TP-GIT-equipe16/tp1/courseGIT/tp3$ git pull
 astuce: Tirer sans spécifier comment réconcilier les branches divergentes
 astuce: est découragé. Vous pouvez éliminer ce message en lançant une des
 astuce: commandes suivantes avant votre prochain tirage :
-astuce: 
+astuce:
 astuce:   git config pull.rebase false  # fusion (stratégie par défaut)
 astuce:   git config pull.rebase true   # rebasage
 astuce:   git config pull.ff only       # avance rapide seulement
-astuce: 
+astuce:
 astuce: Vous pouvez remplacer "git config" par "git config --global" pour que
 astuce: ce soit l'option par défaut pour tous les dépôts. Vous pouvez aussi
 astuce: passer --rebase, --no-rebase ou --ff-only sur la ligne de commande pour
@@ -126,5 +142,4 @@ Mise à jour ddde399..a0d0a94
 Fast-forward
  README.md | 87 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
  1 file changed, 87 insertions(+)
-sa230148@di-718-21:~/TP/TP-GIT-equipe16/tp1/courseGIT/tp3$ 
-
+sa230148@di-718-21:~/TP/TP-GIT-equipe16/tp1/courseGIT/tp3$
