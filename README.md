@@ -8,3 +8,90 @@ remote: Counting objects: 100% (4/4), done.
 remote: Compressing objects: 100% (3/3), done.
 remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
 Receiving objects: 100% (4/4), done
+
+zineddine@MacBook-Air-de-Zineddine tp3 % git status              
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+zineddine@MacBook-Air-de-Zineddine tp3 % git add README.md
+zineddine@MacBook-Air-de-Zineddine tp3 % git status       
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   README.md
+
+zineddine@MacBook-Air-de-Zineddine tp3 % git commit -m "Mise à jour du fichier depuis tp2"
+[main ddde399] Mise à jour du fichier depuis tp2
+ Committer: Zineddine Ghalmi <zineddine@MacBook-Air-de-Zineddine.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 10 insertions(+), 1 deletion(-)
+zineddine@MacBook-Air-de-Zineddine tp3 % git push tp3
+fatal: 'tp3' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+zineddine@MacBook-Air-de-Zineddine tp3 % git push tp3
+fatal: 'tp3' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+zineddine@MacBook-Air-de-Zineddine tp3 % git push origin tp3
+error: src refspec tp3 does not match any
+error: failed to push some refs to 'github.com:4l3x1ss/tp3.git'
+zineddine@MacBook-Air-de-Zineddine tp3 % git pull
+Enter passphrase for key '/Users/zineddine/.ssh/id_rsa':
+Already up to date.
+zineddine@MacBook-Air-de-Zineddine tp3 % git log
+commit ddde399b19970eb07a2fefb5ec08a9b9875378fc (HEAD -> main)
+Author: Zineddine Ghalmi <zineddine@MacBook-Air-de-Zineddine.local>
+Date:   Mon Apr 8 15:56:42 2024 +0200
+
+    Mise à jour du fichier depuis tp2
+
+commit a6709be857dcb22db8b9b33c5c6876adc2c35ad0 (origin/main, origin/HEAD)
+Author: 4l3x1ss <166036579+4l3x1ss@users.noreply.github.com>
+Date:   Mon Apr 8 15:38:42 2024 +0200
+
+    Initial commit
+zineddine@MacBook-Air-de-Zineddine tp3 % git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+zineddine@MacBook-Air-de-Zineddine tp3 % git push
+Enter passphrase for key '/Users/zineddine/.ssh/id_rsa':
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 520 bytes | 520.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:4l3x1ss/tp3.git
+   a6709be..ddde399  main -> main
+zineddine@MacBook-Air-de-Zineddine tp3 % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
