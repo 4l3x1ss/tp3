@@ -165,3 +165,12 @@ Fast-forward
  create mode 100644 src/CryptoMarche.java
  create mode 100644 src/Portefeuille.java
  create mode 100644 src/TestCryptoMarche.java
+
+
+--------------------------------------
+
+zineddine@MacBook-Air-de-Zineddine src % java TestCryptoMarche.java
+Test Portefeuille transfertDevise 	 ... OK
+Test Portefeuille achatDevise    	 ... OK
+Test CryptoMarche capitalEnEuros 	 ... OK
+Test CryptoMarche capitalMonneaie 	 ... OK
