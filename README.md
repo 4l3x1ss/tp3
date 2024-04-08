@@ -143,3 +143,25 @@ Fast-forward
  README.md | 87 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
  1 file changed, 87 insertions(+)
 sa230148@di-718-21:~/TP/TP-GIT-equipe16/tp1/courseGIT/tp3$
+
+
+--------------------------------------
+
+zineddine@MacBook-Air-de-Zineddine tp3 % git pull
+Enter passphrase for key '/Users/zineddine/.ssh/id_rsa':
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 6 (delta 0), reused 6 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), 2.33 KiB | 477.00 KiB/s, done.
+From github.com:4l3x1ss/tp3
+   1e795a8..8da2fcf  main       -> origin/main
+Updating 1e795a8..8da2fcf
+Fast-forward
+ src/CryptoMarche.java     | 60 +++++++++++++++++++++++++++++++++++++++++++++++++++
+ src/Portefeuille.java     | 81 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ src/TestCryptoMarche.java | 63 +++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 204 insertions(+)
+ create mode 100644 src/CryptoMarche.java
+ create mode 100644 src/Portefeuille.java
+ create mode 100644 src/TestCryptoMarche.java
