@@ -13,8 +13,6 @@ receveur :
 -git pull
 
 
-grrggrgrgrgrgrrgrgrrggrrg
-
 
 git clone git@github.com:4l3x1ss/tp3.git
 Cloning into 'tp3'...
@@ -181,3 +179,46 @@ zineddine@MacBook-Air-de-Zineddine tp2 % git log --graph --oneline --all --decor
 * b51a11d (HEAD -> main, origin/main, origin/HEAD) Initial commit
 zineddine@MacBook-Air-de-Zineddine tp2 % git checkout -b test
 Switched to a new branch 'test'
+
+-------------------------------------------
+
+zineddine@MacBook-Air-de-Zineddine tp3 % git branch
+* main
+zineddine@MacBook-Air-de-Zineddine tp3 % git checkout -b test
+Switched to a new branch 'test'
+zineddine@MacBook-Air-de-Zineddine tp3 % git branch
+  main
+* test
+zineddine@MacBook-Air-de-Zineddine tp3 % touch text.txt
+zineddine@MacBook-Air-de-Zineddine tp3 % ls
+README.md	src		text.txt
+zineddine@MacBook-Air-de-Zineddine tp3 % git add text.txt
+zineddine@MacBook-Air-de-Zineddine tp3 % git commit -m "fonction de test ajoutée "
+[test 8b2d4d1] fonction de test ajoutée
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 text.txt
+zineddine@MacBook-Air-de-Zineddine tp3 % git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+zineddine@MacBook-Air-de-Zineddine tp3 % ls
+README.md	src
+zineddine@MacBook-Air-de-Zineddine tp3 % git log --graph --oneline --all --decorate --topo-order
+* 8b2d4d1 (test) fonction de test ajoutée
+* f0ac010 (HEAD -> main, origin/main, origin/HEAD) maj folder
+* ccfd527 maj de README.md
+* 78c75b6 maj
+* 0e9f26e maj
+* 989fe00 MAJ
+* 0db5ad0 maj fichier java
+* fd3f4d5 maj
+* 6d920c4 maj
+* 8da2fcf ajout de fichier
+* 1e795a8 fichier maj
+* 33efad5 Mise a jour du fichier README
+* a0d0a94 Mise à jour du fichier README.md
+* ddde399 Mise à jour du fichier depuis tp2
+* a6709be Initial commit
+zineddine@MacBook-Air-de-Zineddine tp3 % git branch
+* main
+  test
+zineddine@MacBook-Air-de-Zineddine tp3 %
