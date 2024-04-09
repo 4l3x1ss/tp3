@@ -174,3 +174,10 @@ Test Portefeuille transfertDevise 	 ... OK
 Test Portefeuille achatDevise    	 ... OK
 Test CryptoMarche capitalEnEuros 	 ... OK
 Test CryptoMarche capitalMonneaie 	 ... OK
+
+---------------------------------------
+
+zineddine@MacBook-Air-de-Zineddine tp2 % git log --graph --oneline --all --decorate --topo-order
+* b51a11d (HEAD -> main, origin/main, origin/HEAD) Initial commit
+zineddine@MacBook-Air-de-Zineddine tp2 % git checkout -b test
+Switched to a new branch 'test'
