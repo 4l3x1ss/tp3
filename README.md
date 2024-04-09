@@ -222,3 +222,31 @@ zineddine@MacBook-Air-de-Zineddine tp3 % git branch
 * main
   test
 zineddine@MacBook-Air-de-Zineddine tp3 %
+
+-------------------
+
+zineddine@MacBook-Air-de-Zineddine tp3 % git add PorthosCoin.java
+zineddine@MacBook-Air-de-Zineddine tp3 % git commit -m "PorthosCoin crée"
+[PorthosCoin 83984c6] PorthosCoin crée
+ 1 file changed, 5 insertions(+)
+ create mode 100644 PorthosCoin.java
+zineddine@MacBook-Air-de-Zineddine tp3 % git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+zineddine@MacBook-Air-de-Zineddine tp3 % git merge PorthosCoin
+Updating d9296cf..83984c6
+Fast-forward
+ PorthosCoin.java | 5 +++++
+ 1 file changed, 5 insertions(+)
+ create mode 100644 PorthosCoin.java
+zineddine@MacBook-Air-de-Zineddine tp3 % git push origin main
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 596 bytes | 596.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To github.com:4l3x1ss/tp3.git
+   2f7b7f6..83984c6  main -> main
